@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaire">#1B5E20</color>
+    <color name="primaire_clair">#C8E6C9</color>
+    <color name="fond">#F5F7FA</color>
+    <color name="blanc">#FFFFFF</color>
+    <color name="texte_sec">#616161</color>
+</resources>

@@ -1,0 +1,12 @@
+# Android Studio / Gradle
+*.iml
+.gradle/
+.idea/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+# Propre à chaque ordinateur (chemin du SDK)
+local.properties
+# Windows
+Thumbs.db

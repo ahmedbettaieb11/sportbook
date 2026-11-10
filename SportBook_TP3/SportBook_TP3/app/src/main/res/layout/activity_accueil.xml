@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RACINE : LinearLayout vertical
+     ⊃ RelativeLayout (en-tête : titres à gauche, bouton déconnexion à droite)
+     ⊃ LinearLayout (carte de choix : RadioGroup, Switch, SeekBar)
+     ⊃ Button Continuer -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/primaire"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvBienvenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/accueil_titre"
+            android:textColor="@color/blanc"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSousTitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBienvenue"
+            android:layout_marginTop="4dp"
+            android:text="@string/accueil_sous_titre"
+            android:textColor="@color/primaire_clair" />
+
+        <Button
+            android:id="@+id/btnDeconnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/btn_deconnexion"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_carte"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_sport"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioPadel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/sport_padel" />
+
+            <RadioButton
+                android:id="@+id/radioBasket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sport_basket" />
+
+            <RadioButton
+                android:id="@+id/radioFoot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sport_foot" />
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/switchCouvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/terrain_couvert" />
+
+        <TextView
+            android:id="@+id/tvJoueurs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekJoueurs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="20"
+            android:progress="2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinuer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btn_continuer" />
+</LinearLayout>

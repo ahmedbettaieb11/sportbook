@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DÉFI 2 : version ANGLAISE.
+     Mêmes noms que values/strings.xml ; Android choisit ce fichier
+     automatiquement si la langue du téléphone est l'anglais. -->
+<resources>
+    <string name="app_name">SportBook</string>
+    <string name="app_name_single">SportBook (1 screen)</string>
+    <string name="version">Version 2.0 – TP2</string>
+
+    <string name="login_titre">SportBook</string>
+    <string name="login_sous_titre">Book your sports court</string>
+    <string name="hint_nom">Your name</string>
+    <string name="hint_email">Your email</string>
+    <string name="souvenir">Remember me</string>
+    <string name="btn_connexion">Sign in</string>
+    <string name="err_nom">Please enter your name</string>
+    <string name="err_email">Invalid email</string>
+
+    <string name="accueil_titre">Welcome!</string>
+    <string name="accueil_bonjour">Hello %1$s!</string>
+    <string name="accueil_sous_titre">Choose your activity</string>
+    <string name="label_sport">Sport</string>
+    <string name="sport_padel">Padel</string>
+    <string name="sport_basket">Basketball</string>
+    <string name="sport_foot">Football</string>
+    <string name="terrain_couvert">Indoor court</string>
+    <string name="label_joueurs">Number of players: %1$d</string>
+    <string name="btn_continuer">Continue</string>
+    <string name="btn_deconnexion">Sign out</string>
+
+    <string name="resa_titre">Booking</string>
+    <string name="resa_sous_titre">Choose your time slot</string>
+    <string name="resa_recap">%1$s · %2$d players</string>
+    <string name="label_terrain">Court</string>
+    <string name="aucun_terrain">No court selected</string>
+    <string name="terrain_choisi">%1$s – %2$d TND/h</string>
+    <string name="btn_choisir_terrain">Choose</string>
+    <string name="hint_date">Date (dd/mm/yyyy)</string>
+    <string name="hint_heure">Time (hh:mm)</string>
+    <string name="label_duree">Duration</string>
+    <string name="duree_60">1 h</string>
+    <string name="duree_90">1 h 30</string>
+    <string name="duree_120">2 h</string>
+    <string name="label_options">Extras</string>
+    <string name="opt_materiel">Equipment rental (+5 TND)</string>
+    <string name="opt_eclairage">Night lighting (+3 TND)</string>
+    <string name="btn_reserver">Book</string>
+    <string name="btn_retour">Back</string>
+    <string name="progression">Booking in progress… %1$d %%</string>
+    <string name="resa_ok">Booking confirmed!</string>
+    <string name="resa_resume">Booked on %1$s at %2$s</string>
+    <string name="resa_numero">Booking no. %1$s saved</string>
+    <string name="resa_modifier">You can edit your booking</string>
+    <string name="terrain_annule">No court selected</string>
+    <string name="err_date">Please enter the date</string>
+    <string name="err_heure">Please enter the time</string>
+    <string name="err_terrain">Please choose a court first</string>
+
+    <string name="terrains_titre">Courts – %1$s</string>
+    <string name="terrains_sous_titre_couvert">Indoor courts</string>
+    <string name="terrains_sous_titre_tous">All courts</string>
+    <string name="terrain_1">Court 1 · Indoor</string>
+    <string name="terrain_2">Court 2 · Outdoor</string>
+    <string name="terrain_3">Court 3 · Premium</string>
+    <string name="prix_heure">%1$d TND / hour</string>
+    <string name="btn_choisir">Select</string>
+    <string name="btn_annuler">Cancel</string>
+
+    <string name="conf_titre">Check your booking</string>
+    <string name="conf_nom">Name: %1$s</string>
+    <string name="conf_email">Email: %1$s</string>
+    <string name="conf_sport">Sport: %1$s</string>
+    <string name="conf_joueurs">Players: %1$d</string>
+    <string name="conf_terrain">Court: %1$s</string>
+    <string name="conf_creneau">Slot: %1$s at %2$s</string>
+    <string name="conf_duree">Duration: %1$d min</string>
+    <string name="conf_options">Extras: %1$s</string>
+    <string name="conf_aucune">none</string>
+    <string name="conf_total">Total: %1$d TND</string>
+    <string name="btn_modifier">Edit</string>
+    <string name="btn_confirmer">Confirm</string>
+</resources>

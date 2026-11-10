@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Langue par défaut : FRANÇAIS -->
+<resources>
+    <string name="app_name">SportBook</string>
+    <string name="app_name_single">SportBook (1 écran)</string>
+    <string name="version">Version 3.0 – TP3</string>
+
+    <!-- Connexion -->
+    <string name="login_titre">SportBook</string>
+    <string name="login_sous_titre">Réservez votre terrain de sport</string>
+    <string name="hint_nom">Votre nom</string>
+    <string name="hint_email">Votre e-mail</string>
+    <string name="souvenir">Se souvenir de moi</string>
+    <string name="btn_connexion">Se connecter</string>
+    <string name="err_nom">Veuillez saisir votre nom</string>
+    <string name="err_email">E-mail invalide</string>
+
+    <!-- Accueil -->
+    <string name="accueil_titre">Bienvenue !</string>
+    <string name="accueil_bonjour">Bonjour %1$s !</string>
+    <string name="accueil_sous_titre">Choisissez votre activité</string>
+    <string name="label_sport">Sport</string>
+    <string name="sport_padel">Padel</string>
+    <string name="sport_basket">Basketball</string>
+    <string name="sport_foot">Football</string>
+    <string name="terrain_couvert">Terrain couvert (intérieur)</string>
+    <string name="label_joueurs">Nombre de joueurs : %1$d</string>
+    <string name="btn_continuer">Continuer</string>
+    <string name="btn_deconnexion">Déconnexion</string>
+
+    <!-- Réservation -->
+    <string name="resa_titre">Réservation</string>
+    <string name="resa_sous_titre">Choisissez votre créneau</string>
+    <string name="resa_recap">%1$s · %2$d joueurs</string>
+    <string name="label_terrain">Terrain</string>
+    <string name="aucun_terrain">Aucun terrain choisi</string>
+    <string name="terrain_choisi">%1$s – %2$d DT/h</string>
+    <string name="btn_choisir_terrain">Choisir</string>
+    <string name="hint_date">Date (jj/mm/aaaa)</string>
+    <string name="hint_heure">Heure (hh:mm)</string>
+    <string name="label_duree">Durée</string>
+    <string name="duree_60">1 h</string>
+    <string name="duree_90">1 h 30</string>
+    <string name="duree_120">2 h</string>
+    <string name="label_options">Options</string>
+    <string name="opt_materiel">Location de matériel (+5 DT)</string>
+    <string name="opt_eclairage">Éclairage nocturne (+3 DT)</string>
+    <string name="btn_reserver">Réserver</string>
+    <string name="btn_retour">Retour</string>
+    <string name="progression">Réservation en cours… %1$d %%</string>
+    <string name="resa_ok">Réservation confirmée !</string>
+    <string name="resa_resume">Réservé le %1$s à %2$s</string>
+    <string name="resa_numero">Réservation n° %1$s enregistrée</string>
+    <string name="resa_modifier">Vous pouvez modifier votre réservation</string>
+    <string name="terrain_annule">Aucun terrain sélectionné</string>
+    <string name="err_date">Veuillez saisir la date</string>
+    <string name="err_heure">Veuillez saisir l\'heure</string>
+    <string name="err_terrain">Veuillez d\'abord choisir un terrain</string>
+
+    <!-- Terrains (nouvelle activité) -->
+    <string name="terrains_titre">Terrains – %1$s</string>
+    <string name="terrains_sous_titre_couvert">Terrains couverts</string>
+    <string name="terrains_sous_titre_tous">Tous les terrains</string>
+    <string name="terrain_1">Terrain 1 · Intérieur</string>
+    <string name="terrain_2">Terrain 2 · Extérieur</string>
+    <string name="terrain_3">Terrain 3 · Premium</string>
+    <string name="prix_heure">%1$d DT / heure</string>
+    <string name="btn_choisir">Choisir</string>
+    <string name="btn_annuler">Annuler</string>
+
+    <!-- Confirmation (nouvelle activité) -->
+    <string name="conf_titre">Vérifiez votre réservation</string>
+    <string name="conf_nom">Nom : %1$s</string>
+    <string name="conf_email">E-mail : %1$s</string>
+    <string name="conf_sport">Sport : %1$s</string>
+    <string name="conf_joueurs">Joueurs : %1$d</string>
+    <string name="conf_terrain">Terrain : %1$s</string>
+    <string name="conf_creneau">Créneau : le %1$s à %2$s</string>
+    <string name="conf_duree">Durée : %1$d min</string>
+    <string name="conf_options">Options : %1$s</string>
+    <string name="conf_aucune">aucune</string>
+    <string name="conf_total">Total : %1$d DT</string>
+    <string name="btn_modifier">Modifier</string>
+    <string name="btn_confirmer">Confirmer</string>
+
+    <!-- TP3 : Réservation → Calcul du prix -->
+    <string name="label_prix">Prix du créneau</string>
+    <string name="prix_non_calcule">Pas encore calculé</string>
+    <string name="prix_calcule">%1$.2f DT (hors options)</string>
+    <string name="btn_calculer">Calculer</string>
+
+    <!-- TP3 : nouvelle activité 6 – Calcul du prix -->
+    <string name="calcul_titre">Calcul du prix</string>
+    <string name="calcul_sous_titre">Prix de l\'heure × durée</string>
+    <string name="calcul_donnees">Données reçues :\nval1 (prix de l\'heure) = %1$.2f DT\nval2 (durée) = %2$.2f h\n\nrésultat = %3$.2f DT</string>
+
+    <!-- TP3 : Confirmation → Partage -->
+    <string name="btn_partager">Prix par joueur</string>
+    <string name="conf_par_joueur">Chaque joueur paie : %1$.2f DT</string>
+
+    <!-- TP3 : nouvelle activité 7 – Partage -->
+    <string name="partage_titre">Partage entre joueurs</string>
+    <string name="partage_sous_titre">Total ÷ nombre de joueurs</string>
+    <string name="partage_donnees">Données reçues :\nval1 (total) = %1$.2f DT\nval2 (joueurs) = %2$.0f\n\nrésultat = %3$.2f DT par joueur</string>
+
+    <string name="btn_termine">Terminé</string>
+</resources>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RACINE : LinearLayout vertical
+     ⊃ RelativeLayout (en-tête : icône + titre + récapitulatif)
+     ⊃ ScrollView ⊃ LinearLayout (formulaire)
+          ⊃ RelativeLayout (carte « Terrain » : texte à gauche, bouton à droite) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/primaire"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgCalendrier"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/resa_titre"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+
+        <TextView
+            android:id="@+id/tvTitreResa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/imgCalendrier"
+            android:text="@string/resa_titre"
+            android:textColor="@color/blanc"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRecap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitreResa"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/imgCalendrier"
+            android:text="@string/resa_sous_titre"
+            android:textColor="@color/primaire_clair" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Carte « Terrain » : le bouton ouvre TerrainsActivity POUR UN RÉSULTAT -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_carte"
+                android:padding="12dp">
+
+                <Button
+                    android:id="@+id/btnChoisirTerrain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/btn_choisir_terrain" />
+
+                <TextView
+                    android:id="@+id/lblTerrain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/label_terrain"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTerrainChoisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/lblTerrain"
+                    android:layout_marginTop="4dp"
+                    android:layout_toStartOf="@id/btnChoisirTerrain"
+                    android:text="@string/aucun_terrain"
+                    android:textColor="@color/texte_sec" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/hint_date"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/editHeure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_heure"
+                android:inputType="time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/label_duree"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgDuree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/duree_60" />
+
+                <RadioButton
+                    android:id="@+id/radio90"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/duree_90" />
+
+                <RadioButton
+                    android:id="@+id/radio120"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/duree_120" />
+            </RadioGroup>
+
+            <!-- TP3 : carte « Prix » : le bouton ouvre CalculPrixActivity POUR UN RÉSULTAT -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_carte"
+                android:padding="12dp">
+
+                <Button
+                    android:id="@+id/btnCalculerPrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/btn_calculer" />
+
+                <TextView
+                    android:id="@+id/lblPrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/label_prix"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPrixCalcule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/lblPrix"
+                    android:layout_marginTop="4dp"
+                    android:layout_toStartOf="@id/btnCalculerPrix"
+                    android:text="@string/prix_non_calcule"
+                    android:textColor="@color/texte_sec" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/label_options"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkMateriel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opt_materiel" />
+
+            <CheckBox
+                android:id="@+id/checkEclairage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opt_eclairage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRetour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_retour" />
+
+                <Button
+                    android:id="@+id/btnReserver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/btn_reserver" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressResa"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvStatut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

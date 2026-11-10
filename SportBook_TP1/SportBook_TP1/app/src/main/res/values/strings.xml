@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SportBook</string>
+    <string name="version">Version 1.0 – TP1</string>
+
+    <!-- Activité 1 : Connexion -->
+    <string name="login_titre">SportBook</string>
+    <string name="login_sous_titre">Réservez votre terrain de sport</string>
+    <string name="hint_nom">Votre nom</string>
+    <string name="hint_email">Votre e-mail</string>
+    <string name="souvenir">Se souvenir de moi</string>
+    <string name="btn_connexion">Se connecter</string>
+    <string name="err_nom">Veuillez saisir votre nom</string>
+    <string name="err_email">E-mail invalide</string>
+
+    <!-- Activité 2 : Accueil -->
+    <string name="accueil_titre">Bienvenue !</string>
+    <string name="accueil_sous_titre">Choisissez votre activité</string>
+    <string name="label_sport">Sport</string>
+    <string name="sport_padel">Padel</string>
+    <string name="sport_basket">Basketball</string>
+    <string name="sport_foot">Football</string>
+    <string name="terrain_couvert">Terrain couvert (intérieur)</string>
+    <string name="label_joueurs">Nombre de joueurs : %1$d</string>
+    <string name="btn_continuer">Continuer</string>
+    <string name="btn_deconnexion">Déconnexion</string>
+
+    <!-- Activité 3 : Réservation -->
+    <string name="resa_titre">Réservation</string>
+    <string name="resa_sous_titre">Choisissez votre créneau</string>
+    <string name="hint_date">Date (jj/mm/aaaa)</string>
+    <string name="hint_heure">Heure (hh:mm)</string>
+    <string name="label_options">Options</string>
+    <string name="opt_materiel">Location de matériel</string>
+    <string name="opt_eclairage">Éclairage nocturne</string>
+    <string name="btn_reserver">Réserver</string>
+    <string name="btn_retour">Retour</string>
+    <string name="progression">Réservation en cours… %1$d %%</string>
+    <string name="resa_ok">Réservation confirmée !</string>
+    <string name="resa_resume">Réservé le %1$s à %2$s</string>
+    <string name="err_date">Veuillez saisir la date</string>
+    <string name="err_heure">Veuillez saisir l\'heure</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NOUVELLE ACTIVITÉ 4 (TP2)
+     RACINE : LinearLayout vertical
+     ⊃ RelativeLayout (en-tête centré)
+     ⊃ LinearLayout contenant 3 cartes RelativeLayout (<include>)
+     ⊃ Button Annuler -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/primaire">
+
+        <TextView
+            android:id="@+id/tvTitreTerrains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/blanc"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSousTitreTerrains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitreTerrains"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primaire_clair" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <include
+            android:id="@+id/carte1"
+            layout="@layout/item_terrain"
+            android:layout_width="match_parent"
+            android:layout_height="96dp" />
+
+        <include
+            android:id="@+id/carte2"
+            layout="@layout/item_terrain"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="12dp" />
+
+        <include
+            android:id="@+id/carte3"
+            layout="@layout/item_terrain"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnAnnulerTerrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_annuler" />
+    </LinearLayout>
+</LinearLayout>

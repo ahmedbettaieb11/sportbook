@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TP3 : nouvelle activité (style de l'annexe Activity2)
+     RACINE : LinearLayout vertical
+     ⊃ RelativeLayout (en-tête : icône + titre + sous-titre)
+     ⊃ LinearLayout (carte : données reçues + résultat, bouton Terminé) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/primaire"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_calcul"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/calcul_titre"
+            android:src="@android:drawable/ic_menu_agenda" />
+
+        <TextView
+            android:id="@+id/tvTitre_calcul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/img_calcul"
+            android:text="@string/calcul_titre"
+            android:textColor="@color/blanc"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitre_calcul"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/img_calcul"
+            android:text="@string/calcul_sous_titre"
+            android:textColor="@color/primaire_clair" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_carte"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Comme dans l'annexe : un EditText qui affiche les données reçues -->
+        <EditText
+            android:id="@+id/etDataReceived_calcul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:inputType="none"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnDone_calcul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_termine" />
+    </LinearLayout>
+</LinearLayout>
